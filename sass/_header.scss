@@ -60,5 +60,11 @@ header{
             @include btn (250px, #77B2D3);
         }
     }
+
+    @media (max-width:1150px) {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
 }
 
