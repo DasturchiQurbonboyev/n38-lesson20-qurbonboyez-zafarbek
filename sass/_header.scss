@@ -1,0 +1,64 @@
+@import "mixins";
+@import "desine";
+
+
+header{
+    margin-top: -100px;
+    position: fixed;
+    width: 100%;
+    // display: flex;
+    // margin-top: auto;
+    // margin-bottom: auto;
+    background-color: yellow;
+}
+
+.nav{
+    height: 100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list{
+        ul{
+            display: flex;
+            gap: 24px;
+
+            a{
+                color:  #333;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+    }
+
+    &__btn{
+
+        @include btn;
+    }
+}
+
+.studiya{
+
+    padding-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    &__left{
+        h1{
+            @include text__style;
+            span{
+                @include text__style (55px, 500);
+            }
+        }
+        p, button{
+            @include text__style (16px, 600);
+        }
+
+        button{
+            @include btn (250px, #77B2D3);
+        }
+    }
+}
+

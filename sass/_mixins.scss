@@ -1,0 +1,23 @@
+@import "variables";
+@import "fonts";
+
+
+@mixin text__style ($size:45px, $fw:800, $ln-h: 65px, $color: $text-color){
+    color: $color;
+    font-size: $size;
+    font-weight: $fw;
+    line-height: $ln-h;
+}
+
+@mixin btn ($br-rd:9px, $bgc: $lnr-grd ){
+    border-radius: 9px;
+    background: $bgc;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 14px 35px;
+    border-radius: $br-rd;
+    border: none;
+}
+
