@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 .desine {
   background-color: white;
   border-radius: 20px;
@@ -53,6 +54,7 @@
 }
 
 header {
+  z-index: 1;
   margin-top: -100px;
   position: fixed;
   width: 100%;
@@ -326,6 +328,105 @@ header {
   .consultation {
     grid-template-columns: 1fr;
   }
+}
+
+.works div {
+  z-index: 0;
+}
+.works h2 {
+  color: #333;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 41px;
+}
+.works__box {
+  position: relative;
+  z-index: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
+}
+.works__box__list__1 {
+  border-radius: 15px 15px 0 0;
+  padding: 9px 23px;
+}
+.works__box__list__1 img {
+  max-width: 150px;
+}
+.works__box__list__1 p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 4px;
+  padding-bottom: 24px;
+}
+.works__box__list__2 {
+  padding: 21px 23px;
+  background: #F3F1FE;
+}
+.works__box__list__2 span {
+  display: block;
+  color: #333;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.works__box__list__2__result {
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+}
+.works__box__list__2__result div h5 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.works__box__list__2__result div p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 26px;
+}
+.works__box__list__2__result div:nth-child(1) {
+  max-width: 185px;
+}
+.works__box__list__2__result div:nth-child(2) {
+  max-width: 94px;
+}
+.works__box__list__2__result div:nth-child(3) {
+  max-width: 161px;
+}
+.works__box__list__3 {
+  padding: 24px 28px;
+}
+.works__box__list__3 h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.works__box__list__3 div {
+  display: flex;
+  gap: 16px;
+}
+.works__box__list__3 div img:nth-child(1) {
+  max-width: 100px;
+}
+.works__box__list__3 div img:nth-child(2) {
+  max-width: 150px;
+}
+
+.owl-nav button img {
+  margin-top: -150px;
 }
 
 * {
