@@ -1,4 +1,6 @@
 @import "header";
+@import "services";
+@import "fonts";
 
 * {
     margin: 0;
@@ -17,6 +19,10 @@
 
 *a{
     text-decoration: none;
+}
+
+*{
+    font-family: Manrope;
 }
 
 img{

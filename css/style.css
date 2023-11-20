@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
 .desine {
   background-color: white;
   border-radius: 20px;
@@ -126,6 +128,122 @@ header {
   }
 }
 
+.services__home h2 {
+  color: #333;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.services__home__box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.services__home__box--card {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+.services__home__box--card--list {
+  background-color: #fff;
+  border-radius: 15px;
+}
+.services__home__box--card--list .list__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background: #77B2D3;
+  height: 74px;
+  border-radius: 15px 15px 0px 0px;
+}
+.services__home__box--card--list .list__title h4 {
+  text-align: center;
+  padding: 0 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.services__home__box--card--list .list__box {
+  padding: 16px 12px;
+  height: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.services__home__box--card--list .list__box__main {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.services__home__box--card--list .list__box__main--items {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.services__home__box--card--list .list__box__main--items img {
+  height: 18px;
+  width: 18px;
+}
+.services__home__box--card--list .list__box__main span {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.services__home__box--card--list .list__box .list__footer {
+  background: linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding-bottom: 15px;
+}
+.services__home__box--card--list .list__box .list__footer p {
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.services__home__box--card--list .list__box .list__footer span {
+  color: #333;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 24px;
+  color: transparent;
+}
+.services__home__box--card--btn {
+  margin-top: 21px;
+  border-radius: 9px;
+  background: linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  padding: 14px 53px;
+  border-radius: 9px;
+  border: none;
+}
+@media (max-width: 1160px) {
+  .services__home__box {
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 720px) {
+  .services__home__box {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .services__home__box {
+    justify-content: center;
+    grid-template-columns: 1fr;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -143,6 +261,10 @@ header {
 
 * a {
   text-decoration: none;
+}
+
+* {
+  font-family: Manrope;
 }
 
 img {

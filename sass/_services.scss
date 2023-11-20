@@ -1,0 +1,107 @@
+@import "mixins";
+@import "variables";
+
+.services{
+
+
+    &__home{
+        h2{
+            @include text__style (38px, 700, 48px);
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        &__box{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+                &--card{
+                    display: grid;
+                    grid-template-rows:repeat(2, auto) ;
+                    &--list{
+                    background-color: #fff;
+                    border-radius: 15px;
+                    .list__title{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 0;
+                        background: #77B2D3;
+                        height: 74px;
+                        border-radius: 15px 15px 0px 0px;
+                        h4{
+                            text-align: center;
+                            padding :0 20px ;
+                            @include text__style (18px, 800, 26px, #fff);
+                            text-transform: uppercase;
+                        }
+            
+                    }
+            
+                    .list__box{
+                        padding: 16px 12px;
+                        height: 304px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        &__main{
+                            display: flex;
+                            gap: 12px;
+                            flex-direction: column;
+                            
+                            &--items{
+                                display: flex;
+                                align-items: center;
+                                gap: 6px;
+                
+                                img{
+                                    height: 18px;
+                                    width: 18px;
+                                }                
+                            }
+                            span{
+                                @include text__style(16px, 400, 24px );
+                            }
+                
+                        }
+            
+                        .list__footer{
+                            background: $lnr-grd;
+                            background-clip: text;
+                            padding-bottom:15px ;
+                            p{
+                                @include text__style (16px, 400, 24px )
+                            }
+                            span{
+                                @include text__style(30px, 800, 24px );
+                                color: transparent;
+                            }
+                        }
+
+                        
+                    }
+            
+                }
+    
+                &--btn{
+                    margin-top: 21px;
+                    @include btn (9px, $lnr-grd, (14px 53px) )
+                }
+    
+            }
+
+            @media (max-width:1160px) {
+                justify-content: center;
+                grid-template-columns: repeat(3, 1fr);
+            }
+            @media (max-width:720px) {
+                justify-content: center;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width:500px) {
+                justify-content: center;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+}
