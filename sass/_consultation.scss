@@ -1,2 +1,66 @@
 @import "mixins";
 @import "variables";
+
+.consultation{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+
+    &__left{
+        display: grid;
+        gap: 20px;
+        grid-template-rows: repeat(6, auto);
+
+        textarea{
+            height: 140px;
+        }
+
+        h2{
+            @include text__style(38px, 700, 48px);
+            text-transform: uppercase;
+        }
+        p{
+            @include text__style (16px, 400, 26px )
+        }
+
+        &__input{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            
+            input{
+                outline: none;
+                width: 100%;
+            }
+        }
+        .inp-txt-ar{
+            // height: 140px;
+            @include inp-txt-ar;
+            resize: none;
+        }
+
+        &__checkbox{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            input{
+                // border: none;
+                width: 32px;
+                height: 32px;
+                @include inp-txt-ar(2px );
+            }
+            label{
+                @include text__style(16px, 300, 26px);
+            }
+        }
+        button{
+            @include btn;
+        }
+
+    }
+
+    @media (max-width:1000px) {
+        grid-template-columns: 1fr;
+    }
+}

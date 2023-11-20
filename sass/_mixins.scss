@@ -21,3 +21,12 @@
     border: none;
 }
 
+@mixin inp-txt-ar ($padding: 16px 19px, $br-rd: 7px, $bx-shdw:0px 4px 18px 0px rgba(0, 0, 0, 0.08)){
+    border: none;
+    outline: none;
+    padding: $padding;
+    border-radius: $br-rd;
+    background: #fff;
+    box-shadow: $bx-shdw;
+}
+
