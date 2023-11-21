@@ -1,0 +1,56 @@
+@import "mixins";
+@import "desine";
+
+.footer{
+    margin-top: 60px;
+    padding: 52px 15px ;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: #fff;
+
+    &__1{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        img{
+            margin-left: -12px;
+            margin-bottom: 8px;
+            max-width: 352px;
+        }
+        a{
+            @include text__style (16px, 400, 24px );
+            text-decoration-line:underline ;
+        }
+        div{
+            margin-top: 22px;
+            button{
+                @include btn
+            }
+        }
+    }
+
+    &__2, &__3{
+        p{
+            @include text__style(16px, 600, 36px);
+            text-transform: uppercase;
+        }
+
+        a{
+            @include text__style (16px, 400, 36px )
+        }
+    }
+
+    @media (max-width:700px) {
+        flex-wrap: wrap;
+    }
+}
+
+.footer__end{
+    background: #2D2D2D;
+    text-align: center;
+    p{
+        @include text__style (14px, 400, 36px, #fff)
+    }
+}
