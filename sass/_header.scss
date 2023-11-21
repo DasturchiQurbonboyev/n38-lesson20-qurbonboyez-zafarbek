@@ -7,7 +7,8 @@ header{
     margin-top: -100px;
     position: fixed;
     width: 100%;
-    background-color: yellow;
+    background-color: rgba(51, 51, 51, 0.4);
+    backdrop-filter: blur(5px);
 }
 
 .nav{
