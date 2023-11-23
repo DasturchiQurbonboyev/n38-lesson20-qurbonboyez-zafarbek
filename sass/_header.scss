@@ -71,6 +71,15 @@ header{
             span{
                 @include text__style (55px, 500);
             }
+        @media (max-width:620px) {
+          
+                font-size: 35px;
+                span{
+                    font-size: 40px
+                }
+            
+        }
+
         }
         p, button{
             @include text__style (16px, 600);
@@ -84,6 +93,8 @@ header{
                 @include btn (250px, #77B2D3);
             }
         }
+
+        
 
     }
 

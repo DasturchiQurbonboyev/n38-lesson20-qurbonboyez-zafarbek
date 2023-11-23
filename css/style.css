@@ -131,6 +131,14 @@ header {
   font-weight: 500;
   line-height: 65px;
 }
+@media (max-width: 620px) {
+  .studiya__left h1 {
+    font-size: 35px;
+  }
+  .studiya__left h1 span {
+    font-size: 40px;
+  }
+}
 .studiya__left p, .studiya__left button {
   color: #333;
   font-size: 16px;
