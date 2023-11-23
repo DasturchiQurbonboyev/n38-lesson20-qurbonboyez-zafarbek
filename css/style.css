@@ -60,7 +60,7 @@ header {
   margin-top: -100px;
   position: fixed;
   width: 100%;
-  background-color: rgba(51, 51, 51, 0.4);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
@@ -70,6 +70,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav__list {
+  transition: 0.5s;
 }
 .nav__list ul {
   display: flex;
@@ -91,6 +94,23 @@ header {
   padding: 14px 35px;
   border-radius: 9px;
   border: none;
+}
+.nav .humburger {
+  display: none;
+}
+.nav .humburger img {
+  height: 45px;
+}
+@media (max-width: 950px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__btn {
+    display: none;
+  }
+  .nav .humburger {
+    display: inline-block;
+  }
 }
 
 .studiya {
@@ -133,6 +153,10 @@ header {
     grid-template-columns: 1fr;
     gap: 50px;
   }
+}
+
+#navbar-responsive {
+  display: none;
 }
 
 .services__home h2 {
