@@ -137,7 +137,12 @@ header {
   font-weight: 600;
   line-height: 65px;
 }
-.studiya__left button {
+.studiya__left div {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.studiya__left div button {
   border-radius: 9px;
   background: #77B2D3;
   color: #FFF;

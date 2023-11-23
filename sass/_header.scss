@@ -75,10 +75,16 @@ header{
         p, button{
             @include text__style (16px, 600);
         }
+        div{
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
 
-        button{
-            @include btn (250px, #77B2D3);
+            button{
+                @include btn (250px, #77B2D3);
+            }
         }
+
     }
 
     @media (max-width:1150px) {
